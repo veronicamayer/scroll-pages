@@ -1,0 +1,65 @@
+@font-face {
+    font-family: RockSalt;
+    src: url("../fonts/RockSalt-Regular.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RockSalt;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.redpage {
+    background-color: #e96775;
+}
+
+.yellowpage {
+    background-color: #FBFF77;
+}
+
+.greenpage {
+    background-color: #80FFBA;
+}
+
+.redpage, .yellowpage, .greenpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+p {
+    padding: 3vh 0;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.animated-img {
+    animation: move-and-fade 2s ease-in-out infinite;
+}
+
+@keyframes move-and-fade {
+    0% {
+        transform: translateY(20px);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0.3;
+    }
+}
+
